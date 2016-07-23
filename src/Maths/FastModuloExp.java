@@ -15,9 +15,9 @@ public class FastModuloExp {
             numbers[i] = (numbers[i-1]) * (numbers[i-1]) % M;
         }
 
-        for (int i = 0; i < numbers.length; i++)
-            System.out.print(numbers[i] + " ");
-         System.out.println();
+//        for (int i = 0; i < numbers.length; i++)
+//            System.out.print(numbers[i] + " ");
+//         System.out.println();
 
         long prod = 1L;
         for (int i = 0; i < bin.length(); i++) {
@@ -44,6 +44,12 @@ public class FastModuloExp {
 
     public static void main(String[] args) {
         // System.out.println(fastExponentiation(5, 117, 19));
-        System.out.println(fastExponentiation(98765, 1234, 123557));
+        long before = System.nanoTime();
+        long output = fastExponentiation(71045970, 41535484, 64735492);
+        long after = System.nanoTime();
+
+        System.out.println(after-before);
+        System.out.println(output);
+
     }
 }
