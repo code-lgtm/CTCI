@@ -3,7 +3,7 @@ package Maths;
 /**
  * Created by kumar_garg on 7/21/2016.
  */
-public class BasicModuloExp {
+public class BasicSqrt {
     private static long floorSqrt(long num) {
     /*  We can do: return((int)pow(num, 0.5));
         Or, we can use logs
