@@ -23,8 +23,9 @@ public class DAAExPrimAlgo {
             G.addEdge(e);
         }
 
-        PrimLazy mst = new PrimLazy(G);
-        //PrimEager mst = new PrimEager(G);
+        // PrimLazy mst = new PrimLazy(G);
+        // PrimEager mst = new PrimEager(G);
+        KruskalMST mst = new KruskalMST(G);
         System.out.println(mst.weight());
     }
 }
